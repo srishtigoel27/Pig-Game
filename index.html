@@ -30,6 +30,7 @@
             </div>
 
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+<<<<<<< HEAD
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
 
@@ -37,5 +38,45 @@
         </div>
 
         <script src="app.js"></script>
+=======
+            <button class="btn-roll" onclick="rolldice()"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <img src="dice-5.png" alt="Dice" id="dice">
+        </div>
+
+        <script>
+          function rolldice()
+          {
+            var max=6;
+            var min=1;
+            g =Math.floor(Math.random() * (+max - +min)) + +min;
+            if(g==1)
+            {
+              document.getElementById("dice").src="dice-1.png";
+            }
+            else if(g==2)
+            {
+              document.getElementById("dice").src="dice-2.png";
+            }
+            else if(g==3)
+            {
+              document.getElementById("dice").src="dice-3.png";
+            }
+            else if(g==4)
+            {
+              document.getElementById("dice").src="dice-4.png";
+            }
+            else if(g==5)
+            {
+              document.getElementById("dice").src="dice-5.png";
+            }
+            else if(g==6)
+            {
+              document.getElementById("dice").src="dice-6.png";
+            }
+          }
+        </script>
+>>>>>>> master
     </body>
 </html>
