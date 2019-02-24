@@ -1,6 +1,7 @@
 turn=1;
 sum1=0;
 sum2=0;
+check=0;
   function rolldice()
   {
     var max=6;
@@ -40,6 +41,17 @@ sum2=0;
       document.getElementById("dice").src="dice-6.png";
     }
     addSum(g);
+    if(check==0)
+      changeturn();
+  }
+  function setcheck()
+  {
+    changeturn();
+    check=check+1;
+
+  }
+  function changeturn()
+  {
     if(turn==1)
     {
       turn=2;
