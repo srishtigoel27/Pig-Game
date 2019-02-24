@@ -102,3 +102,16 @@ sum2=0;
     document.querySelector(".btn-hold").disabled="true";
   }
   }
+  function newgame()
+  {
+    sum1=0;
+    sum2=0;
+    fin1=0;
+    fin2=0;
+    document.getElementById("name-1").innerHTML="Player 2";
+    document.getElementById("name-0").innerHTML="Player 1";
+    document.getElementById("score-1").innerHTML=0;
+    document.getElementById("score-0").innerHTML=0;
+    document.getElementById("current-0").innerHTML=0;
+    document.getElementById("current-1").innerHTML=0;
+  }
